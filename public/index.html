@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adreno Fit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Balsamiq Sans", cursive;
+        color: aliceblue;
+        padding: 0px;
+        margin: 0px;
+        background: url("img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 1000px;
+      }
+
+      .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 10px;
+      }
+      .left img {
+        width: 50px;
+      }
+      .left div {
+        color: red;
+        font-size: 11px;
+        text-align: center;
+        padding: 0px;
+      }
+      .mid {
+        /* border: 2px solid white; */
+        display: block;
+        width: 50%;
+        margin: 10px 253px;
+      }
+      .active{
+        color: grey;
+      }
+      .right {
+        /* border: 2px solid white; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+      }
+      .right input {
+        border-color: black;
+        border-radius: 14px;
+        padding: 2px;
+        margin: 0px;
+      }
+      .right button {
+        font-family: "Balsamiq Sans", cursive;
+        text-align: left;
+        background-color: black;
+        cursor: pointer;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 13px 18px;
+        font-size: 18px;
+        margin: 4px 16px;
+      }
+      .navbar a:hover {
+        color: grey;
+      }
+      .container {
+        /* border: 2px solid green; */
+        margin: 43px 0px;
+        padding: 23px -19px;
+        width: 33%;
+        text-align: center;
+      }
+      .form input {
+        text-align: center;
+        font-family: "Balsamiq Sans", cursive;
+        border-radius: 25px;
+        padding: 2px 2px;
+        margin: 3px auto;
+        width: 240px;
+      }
+
+      .btn {
+        font-family: "Balsamiq Sans", cursive;
+        border: 2px solid black;
+        text-align: center;
+        margin: 5px 45px;
+        padding: 4px 3px;
+      }
+      .btn:hover{
+        cursor: pointer;
+        color: grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="04012019-25.jpg" alt="" />
+        <div>Adreno Fit</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <l1><a href="/" class="active">Home</a> </l1>
+          <l1><a href="/about">About</a></l1>
+          <l1><a href="/calculator">Fitness Calculator</a></l1>
+          <l1><a href="contact">Contact Us</a></l1>
+        </ul>
+      </div>
+      <div class="right">
+        <input type="text" placeholder="...Search" />
+        <button type="Submit">
+          <img src="search.png" alt="" width="10px" />
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <h3>Get a callback now</h3>
+      <form action="/add" method="post" id="contact">
+        <div class="form">
+          <div>
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div>
+            <input type="text" name="phone" id="phone" placeholder="Phone or E-mail" />
+          </div>
+          <div>
+            <input type="text" name="age" id="age" placeholder="Age" />
+          </div>
+          <div>
+            <input type="text" name="place" id="place" placeholder="Place" />
+          </div>
+          <button class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
